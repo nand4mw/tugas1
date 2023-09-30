@@ -2,112 +2,123 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
-  <link rel="stylesheet" href="css/home.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.js"></script>
+  <link rel="stylesheet" href="css/home.css">
+
+  <title>Data User</title>
 </head>
 
 <body>
-  <section>
-    <div class="navigation">
-      <h1><a href="/register.html">Tugas 3 >></a></h1>
-    </div>
-  </section>
+  <div class="container">
+    <h4>Data User</h4>
 
-  <section>
-    <div class="container">
-      <div>
-        <div class="menu">
-          <select name="" id="">
-            <option value="">none selected :</option>
-            <option value="">Nim</option>
-            <option value="">Nama</option>
-            <option value="">Prodi</option>
-          </select>
+    <button class="btn-tambah">Tambah Data</button>
 
-          <div>
-            <input type="search" placeholder="Search" />
-            <button type="submit" name="submit" id="submit">Submit</button>
-          </div>
-        </div>
+    <table class="table" id="table">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nomor Register</th>
+          <th>Nama</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Verified</th>
+          <th>Status</th>
+          <th width="100">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2202310054</td>
+          <td>Ananda Mw</td>
+          <td>anandamw@unibamadura.ac.id</td>
+          <td>Admin</td>
+          <td><button class="verified">Verified</button></td>
+          <td><button class="verified">Active</button></td>
+          <td>
+            <div class="btn-group">
+              <button class="btn-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path
+                    d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                </svg>
+              </button>
+              <button class="btn-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-check2-circle" viewBox="0 0 16 16">
+                  <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                  <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                </svg>
+              </button>
+              <button class="btn-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                  <path
+                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                </svg>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>2243445</td>
+          <td>maulana ahmad</td>
+          <td>maulana@unibamadura.ac.id</td>
+          <td>Admin</td>
+          <td><button class="verified">Verified</button></td>
+          <td><button class="verified">Active</button></td>
+          <td>
+            <div class="btn-group">
+              <button class="btn-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path
+                    d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                </svg>
+              </button>
+              <button class="btn-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-check2-circle" viewBox="0 0 16 16">
+                  <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                  <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                </svg>
+              </button>
+              <button class="btn-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                  <path
+                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                </svg>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-        <table border="1" cellpadding="10" cellspacing="0">
-          <tr>
-            <th>No</th>
-            <th>Gambar</th>
-            <th>Nim</th>
-            <th>Nama</th>
-            <th>Prodi</th>
-            <th>Role</th>
-            <th>Action</th>
-          </tr>
-
-          <tr>
-            <td>1</td>
-            <td>
-              <img src="./img/LinuxBlue.png" width="80" />
-            </td>
-            <td>2202310054</td>
-            <td>Ananda Maulana Wahyudi</td>
-            <td>Informatika</td>
-            <td>Mahasiswa</td>
-            <td>
-              <a href="" class="update">Update</a> |
-              <a href="" class="delete">Delete</a>
-            </td>
-          </tr>
-
-          <tr>
-            <td>2</td>
-            <td>
-              <img src="./img/LinuxGrey.png" width="80" />
-            </td>
-            <td>2202310056</td>
-            <td>Yanto Cisscato mulyono</td>
-            <td>Informatika</td>
-            <td>Mahasiswa</td>
-            <td>
-              <a href="" class="update">Update</a> |
-              <a href="" class="delete">Delete</a>
-            </td>
-          </tr>
-
-          <tr>
-            <td>3</td>
-            <td>
-              <img src="./img/LinuxLightGreen.png" width="80" />
-            </td>
-            <td>2202310057</td>
-            <td>Yanti Dwi Ningsih</td>
-            <td>Informatika</td>
-            <td>Mahasiswa</td>
-            <td>
-              <a href="" class="update">Update</a> |
-              <a href="" class="delete">Delete</a>
-            </td>
-          </tr>
-
-          <tr>
-            <td>4</td>
-            <td>
-              <img src="./img/LinuxWine.png" width="80" />
-            </td>
-            <td>2202310058</td>
-            <td>Sitti Maimunah</td>
-            <td>Informatika</td>
-            <td>Mahasiswa</td>
-            <td>
-              <a href="" class="update">Update</a> |
-              <a href="" class="delete">Delete</a>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <a href="https://4nndmw.github.io/tugas1/" class="git">Preview</a>
+  <script>
+    $("#table").DataTable({
+    });
+  </script>
 </body>
 
 </html>
